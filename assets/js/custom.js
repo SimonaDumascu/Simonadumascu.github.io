@@ -77,11 +77,18 @@
         resizeDuration: 200,
         wrapAround: true
     });
-    window.onload = function() {
+
+    function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+      }
+  
+    window.onload = async function() {
         if(!window.location.hash) {
-            sleep(1000); // sleep 1sec
             window.location = window.location + '#loaded';
+            console.log("Wait 1 sec");
+            await sleep(1000);
             window.location.reload();
+            console.log("Reloaded");
         }
     }
 //     (function () {
