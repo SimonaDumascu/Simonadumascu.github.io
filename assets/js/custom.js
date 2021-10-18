@@ -79,8 +79,9 @@
     });
     window.onload = function() {
         if(!window.location.hash) {
+            sleep(1000); // sleep 1sec
             window.location = window.location + '#loaded';
-            window.location.reload(1);
+            window.location.reload();
         }
     }
 //     (function () {
