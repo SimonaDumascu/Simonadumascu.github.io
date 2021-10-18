@@ -48,9 +48,11 @@
         $(this).removeClass("hover");
     });
 
-    $("#isotope-wrapper").imagesLoaded(function () {
+
+    $(".isotope-wrapper").imagesLoaded(function () {
         console.log("images loaded");
         $(".isotope-wrapper").each(function () {
+            console.log("New input");
             var $isotope = $(".isotope-box", this);
             var $filterCheckboxes = $('input[type="radio"]', this);
 
@@ -69,6 +71,10 @@
             }
             );
 
+            $isotope.imagesLoaded().progress( function() {
+                $isotope.isotope('layout');
+            });
+
             $(this).on("change", filter);
             filter();
         });
@@ -77,11 +83,12 @@
         resizeDuration: 200,
         wrapAround: true
     });
-  
+
     window.onload = async function() {
         if(!window.location.hash) {
             window.location = window.location + '#loaded';
             window.location.reload();
+            console.log("Reloaded");
         }
     }
 //     (function () {
