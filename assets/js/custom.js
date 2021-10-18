@@ -77,18 +77,11 @@
         resizeDuration: 200,
         wrapAround: true
     });
-
-    function sleep(ms) {
-        return new Promise(resolve => setTimeout(resolve, ms));
-      }
   
     window.onload = async function() {
         if(!window.location.hash) {
             window.location = window.location + '#loaded';
-            console.log("Wait 1 sec");
-            await sleep(1000);
             window.location.reload();
-            console.log("Reloaded");
         }
     }
 //     (function () {
