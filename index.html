@@ -130,10 +130,10 @@
                 <div class="isotope-wrapper">
                     <form class="isotope-toolbar">
                         <!-- Filtros -->
-                        <label><input type="radio" data-type="*" checked="" name="isotope-filter"/><span>Todo</span></label>
-                        <label><input type="radio" data-type="graphic_design" name="isotope-filter"/><span>Diseño gráfico</span></label>
-                        <label><input type="radio" data-type="ux_ui" name="isotope-filter"/><span>Diseño UX/UI</span></label>
-                        <label><input type="radio" data-type="concept_art" name="isotope-filter"/><span>Arte conceptual</span></label>
+                        <label><input id="all" type="radio" data-type="*" name="isotope-filter"/><span>Todo</span></label>
+                        <label><input id="graphic_design" type="radio" data-type="graphic_design" name="isotope-filter"/><span>Diseño gráfico</span></label>
+                        <label><input id="ux_ui" type="radio" data-type="ux_ui" name="isotope-filter"/><span>Diseño UX/UI</span></label>
+                        <label><input id="concept_art" type="radio" data-type="concept_art" name="isotope-filter"/><span>Arte conceptual</span></label>
                     </form>
 
                     <div class="isotope-box">
@@ -773,6 +773,7 @@
     <script src="assets/js/owl-carousel.js"></script>
     <script src="assets/js/lightbox.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/ulr.js"></script>
     <script>
         //according to loftblog tut
         $(".main-menu li:first").addClass("active");
