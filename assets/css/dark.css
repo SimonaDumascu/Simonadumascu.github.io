@@ -833,9 +833,10 @@ section.contact-me {
         left: 3%;
     }
     .isotope-item {
-        width: 94%;
-        height: 25%;
-        margin: 3%;
+        width: fit-content;
+    }
+    .col-4 {
+        display: none;
     }
     .left-image-post img {
         margin-bottom: 30px;
