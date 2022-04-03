@@ -23,7 +23,9 @@ body {
     background-size: cover;
     width: 100%;
 }
-
+ a {
+    color: #a43f49;
+ }
 
 /* Basic */
 
@@ -162,14 +164,12 @@ html {
     margin-bottom: -10px;
 }
 
-.menu .author-content span {
+.menu .author-content h2 {
     /* height: 55px; */
-    text-transform: capitalize;
-    line-height: 50px;
     text-transform: uppercase;
-    /* display: inline-block; */
+    margin-top: 1.5ex;
     margin-bottom: 1.5ex;
-    letter-spacing: 0.55ex;
+    letter-spacing: 0.40ex;
     font-size: 14px;
     color: rgb(255, 255, 255, 0.8);
     transition: all 0.5s;
