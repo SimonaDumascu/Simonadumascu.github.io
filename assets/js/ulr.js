@@ -14,5 +14,5 @@ else if (urlParams.has('concept_art')) {
     document.getElementById('concept_art').checked = true;
 }
 else {
-    document.getElementById('all').checked = true
+    document.getElementById('graphic_design').checked = true
 }
