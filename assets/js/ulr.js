@@ -13,6 +13,6 @@ else if (urlParams.has('concept_art')) {
     console.log('concept_art');
     document.getElementById('concept_art').checked = true;
 }
-else {
-    document.getElementById('graphic_design').checked = true
-}
+// else {
+//     document.getElementById('graphic_design').checked = true
+// }

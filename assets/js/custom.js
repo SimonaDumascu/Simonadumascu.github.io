@@ -87,6 +87,7 @@
     window.onload = async function() {
         if(!window.location.hash) {
             window.location = window.location + '#loaded';
+            document.getElementById('graphic_design').checked = true
             window.location.reload();
             console.log("Reloaded");
         }
